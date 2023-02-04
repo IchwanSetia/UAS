@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .button-primary {
+          @apply bg-primary py-[16px] px-[32px] text-white rounded-full hover:text-orange-400 hover:bg-secondary hover:border transition duration-300;
+        }
+        .button-secondary {
+          @apply py-[16px] px-[49px] text-orange-400 rounded-full border hover:bg-primary hover:text-white transition duration-300;
+        }
+        .button-three {
+          @apply text-orange-400 bg-white w-[104px] py-2 px-4 rounded-full text-xs;
+        }
+        .button-four {
+          @apply py-2 px-4 rounded-full text-white bg-slate-900 w-[104px] opacity-50 items-center;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-secondary">
+      <section class="container mx-auto">
+        <section id="topbar" class="flex justify-between items-center py-6 px-12">
+          <div id="left-side" class="flex items-center gap-x-20">
+            <div class="flex items-center gap-2">
+              <img src="img/Logo.png" alt="" />
+            </div>
+            <nav>
+              <ul class="flex gap-8 items-center">
+                <li><a href="#" class="font-semibold">Home</a></li>
+                <li>
+                  <a href="#">Course</a>
+                </li>
+                <li>
+                  <a href="#">Mentors</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div id="right-side" class="flex items-center gap-10">
+            <a href="#get-started" class="button-secondary">Log In</a>
+            <a href="#get-started" class="button-primary">Registeration</a>
+          </div>
+        </section>
+        <div class="hero pt-[110px] pb-[190px] px-[150px] relative">
+          <div class="w-[558px]">
+            <h1 class="text-6xl font-semibold">The Best <span class="text-orange-400">Courses</span> With the Best Mentors</h1>
+            <p class="mt-6 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum massa sit amet porta efficitur.</p>
+            <a href="#get-started" class="button-primary">Registeration</a>
+          </div>
+          <div class="absolute top-[-35px] right-0">
+            <img src="img/image hero.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="py-28 px-40">
+      <section id="Find">
+        <div class="flex items-center justify-between">
+          <h1 class="text-4xl font-bold w-[320px]">Find The Course You Want</h1>
+          <p class="w-[654px] text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum massa sit amet porta efficitur.</p>
+        </div>
+        <div class="flex justify-between mt-10 mb-12">
+          <div class="relative">
+            <div><img src="img/find 1.png" alt="" /></div>
+            <div class="absolute top-0 py-4 px-4 w-full">
+              <div class="flex justify-between">
+                <div class="button-three"><span class="font-bold text-sm">$25</span>/Course</div>
+                <div class="button-four"><img src="img/star.png" alt="" class="inline mr-1" />(3.5k)</div>
+              </div>
+              <div class="text-white pt-[31px] mt-10">
+                <h1 class="text-xl font-bold">Basic programming (HTML, CSS)</h1>
+                <div class="flex justify-between mt-2">
+                  <div class="flex items-center gap-x-4">
+                    <img src="img/pf 1.png" alt="" />
+                    <p class="inline-block">
+                      <span class="block text-sm">Raphael</span>
+                      <span class="text-xs text-inherit">Teacher</span>
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="img/play.png" alt="" />
+                    <p>20 Video</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div><img src="img/find 2.png" alt="" /></div>
+            <div class="absolute top-0 py-4 px-4 w-full">
+              <div class="flex justify-between">
+                <div class="button-three"><span class="font-bold text-sm">$25</span>/Course</div>
+                <div class="button-four"><img src="img/star.png" alt="" class="inline mr-1" />(3.5k)</div>
+              </div>
+              <div class="text-white pt-[31px] mt-10">
+                <h1 class="text-xl font-bold">Basic programming (HTML, CSS)</h1>
+                <div class="flex justify-between mt-2">
+                  <div class="flex items-center gap-x-4">
+                    <img src="img/pf 2.png" alt="" />
+                    <p class="inline-block">
+                      <span class="block text-sm">Microana</span>
+                      <span class="text-xs text-inherit">Teacher</span>
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="img/play.png" alt="" />
+                    <p>20 Video</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div><img src="img/find 3.png" alt="" /></div>
+            <div class="absolute top-0 py-4 px-4 w-full">
+              <div class="flex justify-between">
+                <div class="button-three"><span class="font-bold text-sm">$25</span>/Course</div>
+                <div class="button-four"><img src="img/star.png" alt="" class="inline mr-1" />(3.5k)</div>
+              </div>
+              <div class="text-white pt-[31px] mt-10">
+                <h1 class="text-xl font-bold">Basic programming (HTML, CSS)</h1>
+                <div class="flex justify-between mt-2">
+                  <div class="flex items-center gap-x-4">
+                    <img src="img/pf 3.png" alt="" />
+                    <p class="inline-block">
+                      <span class="block text-sm">Davidun</span>
+                      <span class="text-xs text-inherit">Teacher</span>
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="img/play.png" alt="" />
+                    <p>20 Video</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#get-started" class="button-primary">See Course</a>
+        </div>
+      </section>
+      <section id="mentor" class="mt-[130px]">
+        <div class="flex items-center justify-between">
+          <div>
+            <img src="img/mentor.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold mb-6">
+              <span class="block">Mentors who are</span>
+              <span class="block">professional in</span>
+              <span class="block">their fields</span>
+            </h1>
+            <p class="text-slate-400">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum <br />
+              massa sit amet porta efficitur.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="provide" class="mt-[130px]">
+        <div class="flex items-center justify-between">
+          <div class="w-[501px]">
+            <h1 class="text-5xl font-bold">We will provide the best for our users from year to year</h1>
+            <p class="text-slate-400 my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum massa sit amet porta efficitur.</p>
+            <div class="flex gap-x-4 mb-10">
+              <div>
+                <div class="flex items-center mb-4 gap-x-2">
+                  <img src="img/verif.png" alt="" />
+                  <h1 class="font-bold">World-class</h1>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <img src="img/verif.png" alt="" />
+                  <h1 class="font-bold">World-class</h1>
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center mb-4 gap-x-2">
+                  <img src="img/verif.png" alt="" />
+                  <h1 class="font-bold">World-class</h1>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <img src="img/verif.png" alt="" />
+                  <h1 class="font-bold">World-class</h1>
+                </div>
+              </div>
+            </div>
+            <a href="#get-started" class="button-primary inline-block">Register Now</a>
+          </div>
+          <div>
+            <img src="img/grafik.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <main class="main-two">
+      <section class="bg-secondary flex py-[70px] px-[150px] items-center gap-x-[187px]">
+        <div class="w-[374px]">
+          <h1 class="text-4xl font-bold mb-6">
+            <span class="block">Trusted</span>
+            <span class="block">by 20,000+ People</span>
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum massa sit amet porta efficitur.</p>
+        </div>
+        <div class="relative">
+          <div class="bg-white p-6 w-[357px] absolute right-[-222px]">
+            <div class="flex items-center gap-x-2">
+              <img src="img/testi 1.png" alt="" />
+              <h1>
+                <span class="block font-bold">ahkesini</span>
+                <span class="block text-slate-400">UI Designer</span>
+              </h1>
+            </div>
+            <div class="my-2">
+              <img src="img/“.png" alt="" />
+              <p class="text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum</p>
+            </div>
+            <img src="img/star 5.png" alt="" />
+          </div>
+          <div class="bg-white p-6 w-[357px] mt-[138px]">
+            <div class="flex items-center gap-x-2">
+              <img src="img/testi 2.png" alt="" />
+              <h1>
+                <span class="block font-bold">ahkama</span>
+                <span class="block text-slate-400">Product Manager</span>
+              </h1>
+            </div>
+            <div class="my-2">
+              <img src="img/“.png" alt="" />
+              <p class="text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum</p>
+            </div>
+            <img src="img/star 5.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="py-[130px] px-[150px]">
+        <div class="px-20 py-24 bg-secondary relative">
+          <div class="w-[423px]">
+            <h1 class="text-4xl font-bold">Develop Your Quality</h1>
+            <p class="mt-6 mb-10 text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum massa sit amet porta efficitur.</p>
+            <a href="#get-started" class="button-primary inline-block">Get Started</a>
+          </div>
+          <div class="absolute top-0 right-[101px]">
+            <img src="img/image 9.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-footer text-white pt-[92px] pb-6 px-[150px]">
+      <div class="flex mb-[42px] items-center">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <div class="footer">
+        <div class="parent-footer flex justify-between">
+          <div class="child-footer head">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+              elit. Donec fermentum massa sit amet porta efficitur.
+            </p>
+            <div class="image flex gap-6 mt-10">
+              <a href=""><img src="img/medsos/facebook.png" alt="" /></a>
+              <a href=""><img src="img/medsos/Twitter.png" alt="" /></a>
+              <a href=""><img src="img/medsos/linkedin.png" alt="" /></a>
+              <a href=""><img src="img/medsos/instagram.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="child-footer">
+            <h5 class="font-bold mb-6">Home</h5>
+            <p>
+              <span class="mb-6 block"><a href="">Class</a></span>
+              <span class="mb-6 block"><a href="">Course</a></span>
+              <span class="mb-6 block"><a href="">About</a></span>
+              <span class="mb-6 block"><a href="">Mentors</a></span>
+            </p>
+          </div>
+          <div class="child-footer">
+            <h5 class="font-bold mb-6">Our Company</h5>
+            <p>
+              <span class="mb-6 block"><a href="">Class Company</a></span>
+              <span class="mb-6 block"><a href="">Course Company</a></span>
+              <span class="mb-6 block"><a href="">Company Name</a></span>
+              <span class="mb-6 block"><a href="">Mens Course</a></span>
+              <span class="mb-6 block"><a href="">Courses.com</a></span>
+            </p>
+          </div>
+          <div class="child-footer">
+            <h5 class="font-bold mb-6">Class</h5>
+            <p>
+              <span class="mb-6 block"><a href="">Potography</a></span>
+              <span class="mb-6 block"><a href="">HTML & CSS</a></span>
+              <span class="mb-6 block"><a href="">JavaScript</a></span>
+              <span class="mb-6 block"><a href="">Java</a></span>
+              <span class="mb-6 block"><a href="">PHP</a></span>
+              <span class="mb-6 block"><a href="">UI/UX Design</a></span>
+              <span class="mb-6 block"><a href="">Web Design</a></span>
+              <span class="mb-6 block"><a href="">Design Grafis</a></span>
+            </p>
+          </div>
+          <div class="child-footer">
+            <h5 class="font-bold">About Us</h5>
+            <p class="my-6">You can contact Us to send email to us</p>
+            <input type="text" class="h-11 w-[289px] rounded-full" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
